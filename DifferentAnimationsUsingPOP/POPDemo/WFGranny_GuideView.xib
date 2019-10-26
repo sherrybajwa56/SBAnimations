@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WFGranny_GuideView">
+            <connections>
+                <outlet property="bubble" destination="MUY-j4-PrD" id="oAU-wb-S9y"/>
+                <outlet property="granny" destination="x1p-E1-XrA" id="htz-pi-czt"/>
+                <outlet property="grannyXPostion" destination="3oc-TM-kyu" id="wKi-X1-j5t"/>
+                <outlet property="lbl_message" destination="IyM-bE-6lL" id="Vzn-B5-SXS"/>
+                <outlet property="message" destination="qAP-CA-Qh2" id="PBO-QS-YiK"/>
+                <outlet property="viewheight" destination="ZJx-Va-gXg" id="Jc6-nW-Bxr"/>
+                <outlet property="viewwidth" destination="xSo-iw-cPD" id="TQL-ph-mV6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="576" height="316"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2016-09-27 at 7.10.25 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="x1p-E1-XrA">
+                    <rect key="frame" x="567" y="226" width="109" height="90"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="mfB-LC-CKZ"/>
+                        <constraint firstAttribute="width" constant="109" id="o6R-gM-7DM"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAP-CA-Qh2">
+                    <rect key="frame" x="561" y="216" width="2" height="2"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green_bubble.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MUY-j4-PrD">
+                            <rect key="frame" x="0.0" y="0.0" width="2" height="2"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="welcome to this page please check it niceley bla bla b;la dsdsaf sd fdaskf dfds fsd fsadf fddsf " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IyM-bE-6lL">
+                            <rect key="frame" x="0.0" y="0.0" width="2" height="2"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="MUY-j4-PrD" secondAttribute="bottom" id="17L-ua-hA6"/>
+                        <constraint firstItem="MUY-j4-PrD" firstAttribute="top" secondItem="qAP-CA-Qh2" secondAttribute="top" id="96g-q9-Lcr"/>
+                        <constraint firstAttribute="trailing" secondItem="MUY-j4-PrD" secondAttribute="trailing" id="G41-qQ-3PU"/>
+                        <constraint firstAttribute="bottom" secondItem="IyM-bE-6lL" secondAttribute="bottom" id="Igj-D7-z3c"/>
+                        <constraint firstItem="MUY-j4-PrD" firstAttribute="leading" secondItem="qAP-CA-Qh2" secondAttribute="leading" id="QZ0-G7-Pzn"/>
+                        <constraint firstAttribute="trailing" secondItem="IyM-bE-6lL" secondAttribute="trailing" id="Y3d-6x-dvV"/>
+                        <constraint firstAttribute="height" constant="2" id="ZJx-Va-gXg"/>
+                        <constraint firstItem="IyM-bE-6lL" firstAttribute="leading" secondItem="qAP-CA-Qh2" secondAttribute="leading" id="cQv-9U-zCK"/>
+                        <constraint firstAttribute="width" constant="2" id="xSo-iw-cPD"/>
+                        <constraint firstItem="IyM-bE-6lL" firstAttribute="top" secondItem="qAP-CA-Qh2" secondAttribute="top" id="zDd-fY-vF0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="x1p-E1-XrA" secondAttribute="trailing" constant="-100" id="3oc-TM-kyu"/>
+                <constraint firstAttribute="bottom" secondItem="x1p-E1-XrA" secondAttribute="bottom" id="Aah-fp-TAR"/>
+                <constraint firstItem="x1p-E1-XrA" firstAttribute="leading" secondItem="qAP-CA-Qh2" secondAttribute="trailing" constant="4" id="G4B-sf-zeb"/>
+                <constraint firstItem="x1p-E1-XrA" firstAttribute="top" secondItem="qAP-CA-Qh2" secondAttribute="bottom" constant="8" id="PG8-c1-JyG"/>
+                <constraint firstAttribute="trailing" secondItem="qAP-CA-Qh2" secondAttribute="trailing" constant="-153" id="haq-z7-hsF"/>
+                <constraint firstAttribute="bottom" secondItem="qAP-CA-Qh2" secondAttribute="bottom" id="kwj-Pb-VoO"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="haq-z7-hsF"/>
+                    <exclude reference="kwj-Pb-VoO"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="404" y="211"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Screen Shot 2016-09-27 at 7.10.25 PM.png" width="154" height="162"/>
+        <image name="green_bubble.jpg" width="512" height="512"/>
+    </resources>
+</document>
